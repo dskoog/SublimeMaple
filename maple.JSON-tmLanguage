@@ -12,19 +12,22 @@
     { "match": "\\b(module|proc)\\b",
       "name" : "entity.name.function.maple"
     },
-    { "match": "\\b(apply|args|assign|assigned|assuming|cat|convert|copy|define|diff|dismantle|dsolve|entries|erf|eval|evalb|evalc|evalf|expand|factor|fsolve|gc|has|hastype|indets|indices|int|length|lhs|lprint|map|map2|member|membertype|nargs|nops|numelems|op|parse|plot|plot3d|print|printf|read|readdata|readline|readstat|remove|restart|rhs|save|select|selectremove|seq|showstat|solve|sscanf|stopat|subs|subsop|sprintf|time|type|unapply|userinfo|writedata|writeline|zip)\\b",
+    { "match": "\\b(apply|args|assign|assigned|cat|convert|copy|define|diff|dismantle|dsolve|entries|erf|eval|evalb|evalc|evalf|expand|factor|fsolve|gc|has|hastype|indets|indices|int|length|lhs|lprint|map|map2|member|membertype|nargs|nops|numelems|op|parse|plot|plot3d|print|printf|read|readdata|readline|readstat|remove|restart|rhs|save|select|selectremove|seq|showstat|solve|sscanf|stopat|subs|subsop|sprintf|time|type|unapply|userinfo|writedata|writeline|zip)\\b",
       "name" : "variable.parameter.commands.maple"
+    },
+    { "match": "\\b(Algebraic|ArrayTools|AudioTools|Student:-Basics|FileTools:-Binary|Bits|RandomTools:-BlumBlumShub|DataSets:-Builtin|MapleTA:-Builtin|CAD|CUDA|Cache|Student:-Calculus1|StandardContext:-Categories|RegularChains:-ChainTools|CodeGeneration|CodeTools|ColorTools|DocumentTools:-Components|FileTools:-Compressed|RegularChains:-ConstructibleSetTools|ContextMenu|Units:-Converter|OreTools:-Converters|CodeTools:-Profiling:-Coverage|CurveFitting|DataSets|Database|SumTools:-DefiniteSum|DifferentialAlgebra|DifferentialGeometry|DiscreteTransforms|DocumentTools|Domains|DynamicSystems|StandardContext:-Entries|StandardContext:-EntryGenerators|EssayTools|ExcelTools|ExternalCalling|RegularChains:-FastArithmeticTools|FileTools|Finance|Fractals|OreTools:-FractionFree|GaussInt|Grading|GraphTheory|Grid|Groebner|GroupTheory|HTTP|HelpTools|SumTools:-Hypergeometric|PolynomialIdeals:-IdealInfo|ImageTools|SumTools:-IndefiniteSum|SolveTools:-Inequality|InertForm|InstallerBuilder|IntegerRelations|IntegrationTools|Iterator:-Inversion|IterativeMaps|Iterator|JSON|`LREtools/HypergeometricTerm`|Fractals:-LSystem|CodeGeneration:-LanguageDefinition|LargeExpressions|DocumentTools:-Layout|DocumentTools:-Layout|LibraryTools|LinearAlgebra|Student:-LinearAlgebra|RandomTools:-LinearCongruence|LinearFunctionalSystems|LinearOperators|ListTools|Logic|MTM|Magma|MapleTA|Maplets|MathML|OreTools:-MathOperations|MathematicalFunctions|Matlab|MatrixPolynomialAlgebra|RegularChains:-MatrixTools|RandomTools:-MersenneTwister|Iterator:-MixedRadix|MmaTranslator:-Mma|MmaTranslator|LinearAlgebra:-Modular|OreTools:-Modular|MultiSeries|Student:-MultivariateCalculus|NumberTheory|Student:-NumericalAnalysis|Optimization|Ordinals|OreTools|Ore_algebra|OrthogonalSeries|PDEtools|RootFinding:-Parametric|RegularChains:-ParametricSystemTools|StringTools:-PatternDictionary|Physics|PolyhedralSets|PolynomialIdeals|PolynomialTools|Student:-Precalculus|ProcessControl|CodeTools:-Profiling|CodeTools:-ProgramAnalysis|OreTools:-Properties|QDifferenceEquations|RandomTools:-QuadraticCongruence|DataSets:-Quandl|StandardContext:-Queries|GraphTheory:-RandomGraphs|RandomTools|RationalNormalForms|RealDomain|RegularChains|RootFinding|SNAP|ScientificConstants|ScientificErrorAnalysis|Security|RegularChains:-SemiAlgebraicSetTools|SignalProcessing|Slode|Sockets|SoftwareMetrics|SolveTools|GraphTheory:-SpecialGraphs|Spread|Units:-Standard|StandardContext|Statistics|Student:-Statistics|StringTools|SumTools|ContextMenu:-Test|Physics:-Tetrads|FileTools:-Text|ThermophysicalData|Threads|TimeSeriesAnalysis|Tolerances|DifferentialAlgebra:-Tools|TypeTools|Typesetting|URL|OreTools:-Utility|VariationalCalculus|Student:-VectorCalculus|VectorCalculus|Physics:-Vectors|Worksheet|XMLTools|codegen|combinat|eBookTools|genfunc|geom3d|geometry|gfun|heap|numapprox|padic|plots|plottools|powseries|priqueue|queue|stack|sumtools)\\b",
+          "name" : "variable.parameter.commands.maple"
     },
     { "match": "\\b(add|ceil|denom|floor|igcd|Im|intersect|iquo|max|min|minus|mod|modp|mods|mul|numer|product|rand|Re|round|sqrt|subset|sum|union)\\b",
       "name" : "variable.parameter.math.maple"
     },
-    { "match": "\\b(anames|cache|description|exports|interface|kernelopts|option|protect|quit|remember|system|trace|unprotect|use|uses|with)\\b",
+    { "match": "\\b(anames|cache|exports|interface|kernelopts|option|protect|quit|remember|system|trace|unprotect|use|uses|with)\\b",
       "name" : "variable.parameter.system.maple"
     },
     { "match": "[a-zA-Z]+\\[[a-zA-Z][a-zA-Z0-9]+\\]+\\:+\\-+([a-zA-Z][a-zA-Z0-9]*)+|[a-zA-Z]+(\\:\\-[a-zA-Z][a-zA-Z0-9]*)+",
       "name": "variable.parameter.general.maple"
     },
-    { "match": "\\b(diffalg|finance|linalg|networks|polytools|process|stats|student|tensor)\\b",
+    { "match": "\\b(diffalg|finance|linalg|networks|numtheory|polytools|process|stats|student|tensor)\\b",
       "name" : "invalid.deprecated.packages.maple"
     },
     { "match": "\\b(array|Eigenvals|ERROR|evalm|INTERFACE_HELP|interp|intrep2maple|lattice|maple2intrep|matrix|maxorder|ModifiedMeijerG|pdesolve|animate3d|cylinderplot|graphplot3d|sphereplot|pieslice|vrml|procbody|procmake|radsimp|ratinterp|readlib|requires|RETURN|SDMPolynom|\\_seed|solvefor|spline|Svd|thiele|traperror|ShortTermOrder|TermOrder|vector)\\b",
@@ -48,7 +51,7 @@
     { "match": "\\b(Catalan|constants|Digits|FAIL|false|gamma|I|infinity|lasterror|libname|NULL|Order|Pi|printlevel|true|undefined)\\b",
       "name" : "support.constant.initiallyknownnames.maple"
     },
-    { "match": "\\b(and|break|catch|do|elif|else|end|error|export|fi|finally|for|from|if|implies|in|is|next|not|od|or|return|then|to|try|WARNING|while|xor)\\b",
+    { "match": "\\b(and|assuming|break|by|catch|description|do|done|elif|else|end|error|export|fi|finally|for|from|if|implies|in|is|next|not|od|or|return|stop|then|to|try|WARNING|while|xor)\\b",
       "name" : "keyword.control.maple"
     },
     { "match": "\\(|\\)|\\[|\\]|\\{|\\}|\\;|\\:|\\'|\\<|\\>|\\,|\\:\\:",
